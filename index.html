@@ -1,23 +1,83 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Account Deletion Request</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Account Deletion Request for Gold Mining Maniac</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #007acc;
+    }
+    form {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      max-width: 500px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
 </head>
 <body>
-  <h1>Zahtjev za brisanje računa</h1>
+  <h1>Account Deletion Request for Gold Mining Maniac</h1>
   <p>
-    Ako želite izbrisati svoj račun i sve povezane podatke iz Gold Mining Maniac,
-    molimo slijedite ove korake:
+    If you wish to delete your account and all associated data from Gold Mining Maniac, please follow the steps below:
   </p>
   <ol>
-    <li>Unesite svoje korisničko ime i registriranu email adresu.</li>
-    <li>Ispunite obrazac za zahtjev brisanja na donjoj stranici.</li>
-    <li>Potvrdite da želite izbrisati račun. Napomena: Vaši podaci će biti
-        trajno izbrisani nakon 30 dana.</li>
+    <li>Please enter your in-game username and the registered email address associated with your account.</li>
+    <li>Fill out the deletion request form down below</li>
+    <li>Once your request is submitted, our support team will process your account deletion.</li>
+    <li>Please note that:
+
+    Your account and all associated data will be permanently deleted from our active systems.
+    For security and backup purposes, certain data may be retained in our backup systems for up to 30 days before being permanently removed.</li>
   </ol>
-  <p>Za dodatna pitanja, kontaktirajte nas na: <a href="mailto:info.miha.games@gmail.com">info.miha.games@gmail.com</a></p>
+  <p>
+    If you have any questions or concerns regarding the deletion of your account or data, please contact us at:
+info.miha.games@gmail.com</a>.
+  </p>
+
+  <!-- Forma za brisanje računa -->
+  <form action="https://formspree.io/f/xrbpgblr" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="message">Reason for deletion (optional):</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
 </body>
 </html>
